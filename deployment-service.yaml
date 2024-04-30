@@ -10,10 +10,10 @@ spec:
   template:
     metadata:
       labels:
-        app: weatherwise-backend
+        app: weatherwise
     spec:
       containers:
-        - name: weatherwise-backend
+        - name: weatherwise
           image: 48483/weatherwisebackend:latest
           imagePullPolicy: Always
           ports:
