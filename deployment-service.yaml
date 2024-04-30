@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment 
 metadata:
-  name: weatherwise-deployment
+  name: weatherwise-backend-deployment
 spec:
   selector:
     matchLabels:
@@ -28,7 +28,7 @@ metadata:
   name: weatherwise-backend-ssvc
 spec:
   selector:
-    app: weatherwise-backend
+    app: weatherwise
   ports:
     - protocol: "TCP"
       port: 8082 
