@@ -1,4 +1,5 @@
 FROM openjdk:11
+EXPOSE 8082
 COPY ./target/*.jar $APP_HOME/app.jar
 WORKDIR $APP_HOME
 CMD ["java", "-jar", "app.jar"]
