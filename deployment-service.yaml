@@ -25,7 +25,7 @@ spec:
 apiVersion: v1 
 kind: Service 
 metadata: 
-  name: weatherwise-ssvc
+  name: weatherwise-b-ssvc
 spec:
   selector:
     app: weatherwise
