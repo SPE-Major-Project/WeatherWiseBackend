@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 import org.springframework.web.client.RestTemplate;
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://weatherwise-f-ssvc:3000")
 @RequestMapping("/user")
 public class UserController {
 
