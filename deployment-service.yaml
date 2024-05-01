@@ -31,3 +31,26 @@ spec:
       port: 8082
       targetPort: 8082
   type: LoadBalancer
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-spring-boot-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "http://weatherwisef-ssvc:3000/"
+    nginx.ingress.kubernetes.io/cors-allow-methods: "GET, PUT, POST, DELETE, PATCH, OPTIONS" 
+    nginx.ingress.kubernetes.io/cors-allow-headers: "Authorization, Content-Type" 
+spec:
+  rules:
+  - host: api.yourdomain.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: my-spring-boot-service
+            port:
+              number: 8080
