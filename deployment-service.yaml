@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: weatherwise-backend
-  replicas: 2 
+  replicas: 1
   template:
     metadata:
       labels:
@@ -28,7 +28,7 @@ metadata:
   name: weatherwise-backend-ssvc
 spec:
   selector:
-    app: weatherwise-backend
+    app: weatherwise-ssvc
   ports:
     - protocol: "TCP"
       port: 8082 
