@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM openjdk:17
 EXPOSE 8082
 COPY ./target/*.jar $APP_HOME/app.jar
 WORKDIR $APP_HOME
