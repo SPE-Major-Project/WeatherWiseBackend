@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment 
 metadata:
-  name: weatherwise-deployment
+  name: backend-deployment
 spec:
   selector:
     matchLabels:
-      app: weatherwise
+      app: backend
   replicas: 2 
   template:
     metadata:
       labels:
-        app: weatherwise
+        app: backend
     spec:
       containers:
-        - name: weatherwise
+        - name: backend-container
           image: 48483/weatherwisebackend:latest
           imagePullPolicy: Always
           ports:
@@ -25,10 +25,10 @@ spec:
 apiVersion: v1 
 kind: Service 
 metadata: 
-  name: weatherwise-backend-ssvc
+  name: backend-service
 spec:
   selector:
-    app: weatherwise
+    app: backend
   ports:
     - protocol: "TCP"
       port: 8082 
