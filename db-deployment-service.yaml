@@ -1,16 +1,16 @@
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: mysql-pv-claim 
-  labels:
-    app: mysql
-    tier: database
-spec:
-  accessModes:
-    - ReadWriteOnce   
-  resources:
-    requests:
-      storage: 1Gi    
+# apiVersion: v1
+# kind: PersistentVolumeClaim
+# metadata:
+#   name: mysql-pv-claim 
+#   labels:
+#     app: mysql
+#     tier: database
+# spec:
+#   accessModes:
+#     - ReadWriteOnce   
+#   resources:
+#     requests:
+#       storage: 1Gi    
 ---
 
 apiVersion: apps/v1
@@ -35,8 +35,8 @@ spec:
     spec:
       containers:
         - image: mysql:latest
-          args:
-            - "--ignore-db-dir=lost+found" 
+          # args:
+          #   - "--ignore-db-dir=lost+found" 
           name: mysql
           env:
             - name: MYSQL_ROOT_PASSWORD
@@ -46,13 +46,13 @@ spec:
           ports:
             - containerPort: 3306
               name: mysql
-          volumeMounts:        
-            - name: mysql-persistent-storage
-              mountPath: /var/lib/mysql 
-      volumes:
-        - name: mysql-persistent-storage 
-          persistentVolumeClaim:
-            claimName: mysql-pv-claim
+          # volumeMounts:        
+          #   - name: mysql-persistent-storage
+          #     mountPath: /var/lib/mysql 
+      # volumes:
+      #   - name: mysql-persistent-storage 
+      #     persistentVolumeClaim:
+      #       claimName: mysql-pv-claim
 ---
 
 apiVersion: v1
