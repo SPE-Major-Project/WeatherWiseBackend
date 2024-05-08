@@ -18,6 +18,15 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8082
+          env:
+            - name: DB_HOST
+              value: mysql
+            - name: DB_NAME
+              value: weatherwise
+            - name: DB_USERNAME
+              value: root
+            - name: DB_PASSWORD
+              value: rishabh@123
 ---
 apiVersion: v1
 kind: Service
@@ -30,4 +39,4 @@ spec:
     - protocol: "TCP"
       port: 8082
       targetPort: 8082
-  type: LoadBalancer 
+  type: NodePort 
