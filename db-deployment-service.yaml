@@ -30,16 +30,27 @@ spec:
           name: mysql
           env:
             - name: MYSQL_ROOT_PASSWORD
-            - value: rishabh@123  
+              value: rishabh@123
           ports:
             - containerPort: 3306
               name: mysql
-          
+          # volumeMounts:
+          #   - name: mysql-persistent-storage
+          #     mountPath: /var/lib/mysql
+          #   - name: mysql-initdb
+          #     mountPath: /docker-entrypoint-initdb.d
+      # volumes:
+      #   - name: mysql-persistent-storage
+      #     persistentVolumeClaim:
+      #       claimName: mysql-pv-claim
+      #   - name: mysql-initdb
+      #     configMap:
+      #       name: mysql-initdb-config
 ---
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: mysql-initdb-config
-data:
-  initdb.sql: |
-    CREATE DATABASE IF NOT EXISTS `weatherwise`;
+# apiVersion: v1
+# kind: ConfigMap
+# metadata:
+#   name: mysql-initdb-config
+# data:
+#   initdb.sql: |
+#     CREATE DATABASE IF NOT EXISTS `demo` CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci';
