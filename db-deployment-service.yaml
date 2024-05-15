@@ -45,5 +45,5 @@ spec:
       containers:
       - name: grant-permissions
         image: mysql:latest
-        command: ["sh", "-c", "mysql -u root -p rishabh@123 -h mysql -e 'GRANT ALL PRIVILEGES ON *.* TO '*'@'%' WITH GRANT OPTION;'"]
+        command: ["sh", "-c", "mysql -u root -prishabh@123 -h mysql -e 'GRANT ALL PRIVILEGES ON *.* TO '*'@'%' WITH GRANT OPTION;'"]
       restartPolicy: Never
