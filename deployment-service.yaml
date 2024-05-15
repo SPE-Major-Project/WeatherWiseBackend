@@ -19,13 +19,11 @@ spec:
           ports:
             - containerPort: 8082
           env:
-            - name: DB_HOST
-              value: mysql-0.mysql
-            - name: DB_NAME
-              value: weatherwise
-            - name: DB_USERNAME
+            - name: MYSQL_PORT
+              value: '3306'
+            - name: MYSQL_USERNAME
               value: root
-            - name: DB_PASSWORD
+            - name: MYSQL_PASSWORD
               value: rishabh@123
 ---
 apiVersion: v1
@@ -38,5 +36,5 @@ spec:
   ports:
     - protocol: "TCP"
       port: 8082
-      targetPort: 8082
+      nodePort: 8082
   type: NodePort 
