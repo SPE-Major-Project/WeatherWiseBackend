@@ -1,5 +1,5 @@
 # Persistent Volume
-apiVersion: v1
+apiVersion: apps/v1
 kind: PersistentVolume
 metadata:
   name: mysql-pv
@@ -16,7 +16,7 @@ spec:
 ---
 
 # Persistent Volume Claim
-apiVersion: v1
+apiVersion: apps/v1
 kind: PersistentVolumeClaim
 metadata:
   name: mysql-pvc
@@ -71,7 +71,7 @@ spec:
 
 # Headless Service
 ---
-apiVersion: v1
+apiVersion: apps/v1
 kind: Service
 metadata:
   name: mysql
