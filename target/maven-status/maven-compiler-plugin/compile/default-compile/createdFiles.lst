@@ -1,0 +1,8 @@
+com\example\WeatherWise\repository\LocationRepository.class
+com\example\WeatherWise\model\User.class
+com\example\WeatherWise\service\UserService.class
+com\example\WeatherWise\model\Location.class
+com\example\WeatherWise\service\LocationService.class
+com\example\WeatherWise\repository\UserRepository.class
+com\example\WeatherWise\controller\UserController.class
+com\example\WeatherWise\WeatherWiseApplication.class
