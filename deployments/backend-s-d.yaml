@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: weatherwise
-  namespace: weatherwise
+  # namespace: weatherwise
   labels:
     app: weatherwise
 spec:
@@ -42,7 +42,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: weatherwise
-  namespace: weatherwise
+  # namespace: weatherwise
 spec:
   # type: NodePort
   selector:
@@ -55,7 +55,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: weatherwise-service-config
-  namespace: weatherwise
+  # namespace: weatherwise
 data:
   DB_URL: jdbc:mysql://mysql-svc:3306/weatherwise?createDatabaseIfNotExist=true
   DB_USERNAME: root
