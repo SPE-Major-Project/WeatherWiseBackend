@@ -29,10 +29,10 @@ spec:
       labels:
         app: mysql
     spec:
-      volumes:
-        - name: mysql-persistent-storage
-          persistentVolumeClaim:
-            claimName: mysql-pv-claim
+      # volumes:
+      #   - name: mysql-persistent-storage
+      #     persistentVolumeClaim:
+      #       claimName: mysql-pv-claim
       containers:
         - name: mysql
           image: mysql:latest
@@ -42,6 +42,6 @@ spec:
           ports:
             - containerPort: 3306
               name: mysql
-          volumeMounts:
-            - name: mysql-persistent-storage
-              mountPath: "/var/lib/mysql"
+          # volumeMounts:
+          #   - name: mysql-persistent-storage
+          #     mountPath: "/var/lib/mysql"
