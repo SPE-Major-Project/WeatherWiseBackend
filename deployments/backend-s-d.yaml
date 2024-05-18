@@ -49,7 +49,7 @@ spec:
     app: weatherwise
   ports:
     - port: 80
-      targetPort: 8080
+      targetPort: 8082
 ---
 apiVersion: v1
 kind: ConfigMap
