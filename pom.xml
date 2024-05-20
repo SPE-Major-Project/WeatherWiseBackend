@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.2.4</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>WeatherWise</artifactId>
@@ -65,7 +65,6 @@
 			</plugin>
 		</plugins>
 	</build>
-
 	<distributionManagement>
 	        <repository>
 	            <id>maven-releases</id>
