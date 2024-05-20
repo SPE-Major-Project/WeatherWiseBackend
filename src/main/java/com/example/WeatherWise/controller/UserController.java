@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 import org.springframework.web.client.RestTemplate;
 @RestController
-@CrossOrigin()
+@CrossOrigin
 @RequestMapping("/user")
 public class UserController {
 
