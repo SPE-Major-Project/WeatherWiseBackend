@@ -1,4 +1,7 @@
 spring:
+  config:
+    import:
+      configserver:
   application:
     name: WeatherWise
   datasource:
@@ -6,6 +9,16 @@ spring:
     url: ${DB_URL:jdbc:mysql://localhost:3306/weatherwise?createDatabaseIfNotExist=true}
     username: ${DB_USERNAME:root}
     password: ${DB_PASSWORD:1234}
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          "[/**]":
+            allowedOriginPatterns:
+              - "*"
+            allowCredentials: true
+            allowedMethods: "*"
+            allowedHeaders: "*"
   jpa:
     hibernate:
       ddl-auto: update
