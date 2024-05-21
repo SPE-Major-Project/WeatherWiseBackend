@@ -51,11 +51,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
-        <dependency>
-            <groupId>net.logstash.logback</groupId>
-            <artifactId>logstash-logback-encoder</artifactId>
-            <version>6.6</version>
-        </dependency>
+		<dependency>
+			<groupId>net.logstash.logback</groupId>
+			<artifactId>logstash-logback-encoder</artifactId>
+			<version>7.1.1</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -74,15 +74,17 @@
 			</plugin>
 		</plugins>
 	</build>
-	<distributionManagement>
-	        <repository>
-	            <id>maven-releases</id>
-	            <url>http://64.227.158.114:8081/repository/maven-releases/</url>
-	        </repository>
-	        <snapshotRepository>
-	            <id>maven-snapshots</id>
-	            <url>http://64.227.158.114:8081/repository/maven-snapshots/</url>
-	        </snapshotRepository>
-        </distributionManagement>
+
+<!--For	Nexus-->
+<!--	<distributionManagement>-->
+<!--	        <repository>-->
+<!--	            <id>maven-releases</id>-->
+<!--	            <url>http://64.227.158.114:8081/repository/maven-releases/</url>-->
+<!--	        </repository>-->
+<!--	        <snapshotRepository>-->
+<!--	            <id>maven-snapshots</id>-->
+<!--	            <url>http://64.227.158.114:8081/repository/maven-snapshots/</url>-->
+<!--	        </snapshotRepository>-->
+<!--        </distributionManagement>-->
 	
 </project>
