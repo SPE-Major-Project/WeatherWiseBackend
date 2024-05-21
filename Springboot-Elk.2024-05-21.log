@@ -1,0 +1,106 @@
+[2024-05-21 12:55:11.460] [Rishabh] [restartedMain] INFO c.e.W.WeatherWiseApplication@logStarting:50 - Starting WeatherWiseApplication using Java 21.0.2 with PID 24520 (E:\IIITB\_Sem_2\SP\End\Major_Project\WeatherWiseBackend\target\classes started by RISHABH in E:\IIITB\_Sem_2\SP\End\Major_Project\WeatherWiseBackend)
+[2024-05-21 12:55:11.462] [Rishabh] [restartedMain] INFO c.e.W.WeatherWiseApplication@logStartupProfileInfo:654 - No active profile set, falling back to 1 default profile: "default"
+[2024-05-21 12:55:11.488] [Rishabh] [restartedMain] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor@logTo:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-05-21 12:55:11.488] [Rishabh] [restartedMain] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor@logTo:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-05-21 12:55:11.873] [Rishabh] [restartedMain] INFO o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-05-21 12:55:11.906] [Rishabh] [restartedMain] INFO o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn:208 - Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+[2024-05-21 12:55:12.219] [Rishabh] [restartedMain] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:109 - Tomcat initialized with port 8082 (http)
+[2024-05-21 12:55:12.225] [Rishabh] [restartedMain] INFO o.a.coyote.http11.Http11NioProtocol@log:173 - Initializing ProtocolHandler ["http-nio-8082"]
+[2024-05-21 12:55:12.226] [Rishabh] [restartedMain] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2024-05-21 12:55:12.226] [Rishabh] [restartedMain] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+[2024-05-21 12:55:12.258] [Rishabh] [restartedMain] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring embedded WebApplicationContext
+[2024-05-21 12:55:12.258] [Rishabh] [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext:296 - Root WebApplicationContext: initialization completed in 769 ms
+[2024-05-21 12:55:12.550] [Rishabh] [restartedMain] INFO o.s.o.j.p.SpringPersistenceUnitInfo@addTransformer:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-05-21 12:55:12.567] [Rishabh] [restartedMain] INFO com.zaxxer.hikari.HikariDataSource@getConnection:110 - HikariPool-1 - Starting...
+[2024-05-21 12:55:13.096] [Rishabh] [restartedMain] INFO com.zaxxer.hikari.HikariDataSource@getConnection:110 - HikariPool-1 - Starting...
+[2024-05-21 12:55:13.099] [Rishabh] [restartedMain] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean@buildNativeEntityManagerFactory:426 - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver com.mysql.cj.jdbc.Driver claims to not accept jdbcUrl, ${DB_URL}
+[2024-05-21 12:55:13.099] [Rishabh] [restartedMain] WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext@refresh:632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver com.mysql.cj.jdbc.Driver claims to not accept jdbcUrl, ${DB_URL}
+[2024-05-21 12:55:13.101] [Rishabh] [restartedMain] INFO o.a.catalina.core.StandardService@log:173 - Stopping service [Tomcat]
+[2024-05-21 12:55:13.107] [Rishabh] [restartedMain] INFO o.s.b.a.l.ConditionEvaluationReportLogger@logMessage:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2024-05-21 12:55:13.120] [Rishabh] [restartedMain] ERROR o.s.boot.SpringApplication@reportFailure:851 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver com.mysql.cj.jdbc.Driver claims to not accept jdbcUrl, ${DB_URL}
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.example.WeatherWise.WeatherWiseApplication.main(WeatherWiseApplication.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver com.mysql.cj.jdbc.Driver claims to not accept jdbcUrl, ${DB_URL}
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 19 common frames omitted
+Caused by: java.lang.RuntimeException: Driver com.mysql.cj.jdbc.Driver claims to not accept jdbcUrl, ${DB_URL}
+	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:110)
+	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:326)
+	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:112)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:93)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:64)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 23 common frames omitted
+[2024-05-21 12:55:44.907] [Rishabh] [restartedMain] INFO c.e.W.WeatherWiseApplication@logStarting:50 - Starting WeatherWiseApplication using Java 21.0.2 with PID 24992 (E:\IIITB\_Sem_2\SP\End\Major_Project\WeatherWiseBackend\target\classes started by RISHABH in E:\IIITB\_Sem_2\SP\End\Major_Project\WeatherWiseBackend)
+[2024-05-21 12:55:44.909] [Rishabh] [restartedMain] INFO c.e.W.WeatherWiseApplication@logStartupProfileInfo:654 - No active profile set, falling back to 1 default profile: "default"
+[2024-05-21 12:55:44.935] [Rishabh] [restartedMain] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor@logTo:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-05-21 12:55:44.935] [Rishabh] [restartedMain] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor@logTo:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-05-21 12:55:45.298] [Rishabh] [restartedMain] INFO o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn:139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-05-21 12:55:45.332] [Rishabh] [restartedMain] INFO o.s.d.r.c.RepositoryConfigurationDelegate@registerRepositoriesIn:208 - Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+[2024-05-21 12:55:45.669] [Rishabh] [restartedMain] INFO o.s.b.w.e.tomcat.TomcatWebServer@initialize:109 - Tomcat initialized with port 8082 (http)
+[2024-05-21 12:55:45.675] [Rishabh] [restartedMain] INFO o.a.coyote.http11.Http11NioProtocol@log:173 - Initializing ProtocolHandler ["http-nio-8082"]
+[2024-05-21 12:55:45.677] [Rishabh] [restartedMain] INFO o.a.catalina.core.StandardService@log:173 - Starting service [Tomcat]
+[2024-05-21 12:55:45.677] [Rishabh] [restartedMain] INFO o.a.catalina.core.StandardEngine@log:173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+[2024-05-21 12:55:45.713] [Rishabh] [restartedMain] INFO o.a.c.c.C.[Tomcat].[localhost].[/]@log:173 - Initializing Spring embedded WebApplicationContext
+[2024-05-21 12:55:45.713] [Rishabh] [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext@prepareWebApplicationContext:296 - Root WebApplicationContext: initialization completed in 777 ms
+[2024-05-21 12:55:45.995] [Rishabh] [restartedMain] INFO o.s.o.j.p.SpringPersistenceUnitInfo@addTransformer:87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-05-21 12:55:46.010] [Rishabh] [restartedMain] INFO com.zaxxer.hikari.HikariDataSource@getConnection:110 - HikariPool-1 - Starting...
+[2024-05-21 12:55:46.209] [Rishabh] [restartedMain] INFO com.zaxxer.hikari.pool.HikariPool@checkFailFast:565 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b057af4
+[2024-05-21 12:55:46.210] [Rishabh] [restartedMain] INFO com.zaxxer.hikari.HikariDataSource@getConnection:123 - HikariPool-1 - Start completed.
+[2024-05-21 12:55:46.846] [Rishabh] [restartedMain] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean@buildNativeEntityManagerFactory:437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-05-21 12:55:47.104] [Rishabh] [restartedMain] WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration@openEntityManagerInViewInterceptor:232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-05-21 12:55:47.312] [Rishabh] [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer@startServer:59 - LiveReload server is running on port 35729
+[2024-05-21 12:55:47.327] [Rishabh] [restartedMain] INFO o.a.coyote.http11.Http11NioProtocol@log:173 - Starting ProtocolHandler ["http-nio-8082"]
+[2024-05-21 12:55:47.339] [Rishabh] [restartedMain] INFO o.s.b.w.e.tomcat.TomcatWebServer@start:241 - Tomcat started on port 8082 (http) with context path ''
+[2024-05-21 12:55:47.345] [Rishabh] [restartedMain] INFO c.e.W.WeatherWiseApplication@logStarted:56 - Started WeatherWiseApplication in 10.105 seconds (process running for 10.646)
+[2024-05-21 12:55:54.622] [Rishabh] [SpringApplicationShutdownHook] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean@destroy:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-05-21 12:55:54.624] [Rishabh] [SpringApplicationShutdownHook] INFO com.zaxxer.hikari.HikariDataSource@close:350 - HikariPool-1 - Shutdown initiated...
+[2024-05-21 12:55:54.631] [Rishabh] [SpringApplicationShutdownHook] INFO com.zaxxer.hikari.HikariDataSource@close:352 - HikariPool-1 - Shutdown completed.
