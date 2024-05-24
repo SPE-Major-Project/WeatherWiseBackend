@@ -1,0 +1,55 @@
+2024-05-24T15:16:48.026+05:30  INFO 28488 --- [WeatherWise] [restartedMain] c.e.WeatherWise.WeatherWiseApplication   : Starting WeatherWiseApplication using Java 21.0.2 with PID 28488 (E:\IIITB\_Sem_2\SP\End\Major_Project\WeatherWiseBackend\target\classes started by RISHABH in E:\IIITB\_Sem_2\SP\End\Major_Project\WeatherWiseBackend)
+2024-05-24T15:16:48.027+05:30  INFO 28488 --- [WeatherWise] [restartedMain] c.e.WeatherWise.WeatherWiseApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-24T15:16:48.055+05:30  INFO 28488 --- [WeatherWise] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-24T15:16:48.056+05:30  INFO 28488 --- [WeatherWise] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-24T15:16:48.444+05:30  INFO 28488 --- [WeatherWise] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-24T15:16:48.479+05:30  INFO 28488 --- [WeatherWise] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2024-05-24T15:16:48.790+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-05-24T15:16:48.797+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-24T15:16:48.798+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-24T15:16:48.832+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-24T15:16:48.832+05:30  INFO 28488 --- [WeatherWise] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 776 ms
+2024-05-24T15:16:48.926+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-24T15:16:48.960+05:30  INFO 28488 --- [WeatherWise] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-24T15:16:48.984+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-24T15:16:49.134+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-24T15:16:49.150+05:30  INFO 28488 --- [WeatherWise] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-24T15:16:49.365+05:30  INFO 28488 --- [WeatherWise] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@bcd6f63
+2024-05-24T15:16:49.366+05:30  INFO 28488 --- [WeatherWise] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-24T15:16:49.398+05:30  WARN 28488 --- [WeatherWise] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-24T15:16:49.964+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-24T15:16:50.007+05:30  INFO 28488 --- [WeatherWise] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-24T15:16:50.235+05:30  WARN 28488 --- [WeatherWise] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-24T15:16:50.429+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-24T15:16:50.454+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2024-05-24T15:16:50.460+05:30  INFO 28488 --- [WeatherWise] [restartedMain] c.e.WeatherWise.WeatherWiseApplication   : Started WeatherWiseApplication in 2.69 seconds (process running for 3.144)
+2024-05-24T15:17:22.287+05:30  INFO 28488 --- [WeatherWise] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-24T15:17:22.294+05:30  INFO 28488 --- [WeatherWise] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-24T15:17:22.296+05:30  INFO 28488 --- [WeatherWise] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-24T15:17:22.302+05:30  INFO 28488 --- [WeatherWise] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-24T15:17:22.355+05:30  INFO 28488 --- [WeatherWise] [restartedMain] c.e.WeatherWise.WeatherWiseApplication   : Starting WeatherWiseApplication using Java 21.0.2 with PID 28488 (E:\IIITB\_Sem_2\SP\End\Major_Project\WeatherWiseBackend\target\classes started by RISHABH in E:\IIITB\_Sem_2\SP\End\Major_Project\WeatherWiseBackend)
+2024-05-24T15:17:22.355+05:30  INFO 28488 --- [WeatherWise] [restartedMain] c.e.WeatherWise.WeatherWiseApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-24T15:17:22.451+05:30  INFO 28488 --- [WeatherWise] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-24T15:17:22.457+05:30  INFO 28488 --- [WeatherWise] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2024-05-24T15:17:22.512+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-05-24T15:17:22.513+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-24T15:17:22.513+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-24T15:17:22.527+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-24T15:17:22.527+05:30  INFO 28488 --- [WeatherWise] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 170 ms
+2024-05-24T15:17:22.549+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-24T15:17:22.551+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-24T15:17:22.554+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-24T15:17:22.555+05:30  INFO 28488 --- [WeatherWise] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-05-24T15:17:22.565+05:30  INFO 28488 --- [WeatherWise] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8517954
+2024-05-24T15:17:22.566+05:30  INFO 28488 --- [WeatherWise] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-05-24T15:17:22.567+05:30  WARN 28488 --- [WeatherWise] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-24T15:17:22.596+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-24T15:17:22.609+05:30  INFO 28488 --- [WeatherWise] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-24T15:17:22.667+05:30  WARN 28488 --- [WeatherWise] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-24T15:17:22.728+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-24T15:17:22.736+05:30  INFO 28488 --- [WeatherWise] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2024-05-24T15:17:22.739+05:30  INFO 28488 --- [WeatherWise] [restartedMain] c.e.WeatherWise.WeatherWiseApplication   : Started WeatherWiseApplication in 0.403 seconds (process running for 35.423)
+2024-05-24T15:17:22.740+05:30  INFO 28488 --- [WeatherWise] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-24T15:21:20.505+05:30  INFO 28488 --- [WeatherWise] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-24T15:21:20.505+05:30  INFO 28488 --- [WeatherWise] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-05-24T15:21:20.510+05:30  INFO 28488 --- [WeatherWise] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
